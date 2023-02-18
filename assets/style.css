@@ -1,58 +1,84 @@
 /* font-family: 'Raleway', sans-serif; */
 
-:root{
-    font-size: 16px;
-    --red:#FF676C;
-    --grey:#F2F2F2;
+:root {
+  font-size: 16px;
+  --red: #ff676c;
+  --grey: #f2f2f2;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-    font-family: 'Raleway', sans-serif; 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: "Raleway", sans-serif;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
-body{
-    width: 100%;
-    background-color: var(--red);
+body {
+  width: 100%;
+  background-color: var(--red);
 }
-.wrapper{
-    width: 100%;
-    height: 100vh;
-    background-color:var(--red);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--red);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.white{
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color:var(--grey);
+.white {
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--grey);
 }
-.title{
-    position: inherit;
-    color: var(--red);
-    margin-top: 8%;
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: 900;
+.title {
+  position: inherit;
+  color: var(--red);
+  margin-top: 8%;
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 900;
 }
-.actorImage{
-    position: relative;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: top;
-    border: 2px solid var(--red);
-    padding: 3px;
+.actorsList {
+  width: 60%;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.actorCard {
+  width: 300px;
+  max-width: 300px;
+  padding: 90px 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 4px 20px 0.5px rgba(0, 0, 0, 0.461);
+  border-radius: 20px;
+}
+.actorName {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.actorImage {
+  position: relative;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid var(--red);
+  padding: 3px;
 }
